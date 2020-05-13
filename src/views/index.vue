@@ -96,8 +96,9 @@
             <h1 id="六在线体验">六、在线体验</h1>
             <h2 id="61演示地址">6.1、演示地址</h2>
             <p><a href="http://magic4j.itgacl.com" target="_blank" style="color: blue">http://magic4j.itgacl.com</a><br />
-              帐号：magic4j<br />
-              密码：123456</p>
+            <p>演示账号1：admin(系统管理员)/123456</p>
+            <p>演示账号2：mapout(租户管理员1)/123456</p>
+            <p>演示账号3：comba(租户管理员2)/123456</p>
             <h1 id="七二次开发">七、二次开发</h1>
             <p>项目地址：<a href="https://gitee.com/gacl/magic4j" target="_blank" style="color: blue"><a href="https://gitee.com/gacl/magic4j">https://gitee.com/gacl/magic4j</a></a><br />
               技术文档：<a href="http://file.itgacl.com/magic4j-docs" target="_blank" style="color: blue"><a href="http://file.itgacl.com/magic4j-docs">http://file.itgacl.com/magic4j-docs</a></a></p>
