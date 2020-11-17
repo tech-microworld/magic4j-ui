@@ -16,11 +16,11 @@ import permission from './directive/permission'
 
 import './assets/icons' // icon
 import './permission' // permission control
-import { getDicts } from "@/api/system/dict";
-import { getConfigKey } from "@/api/system/config";
+import { getDicts } from "@/api/sys/dict";
+import { getConfigKey } from "@/api/sys/config";
 import { parseTime, resetForm, addDateRange, selectDictLabel, download, handleTree } from "@/utils/commonUtil";
 import Pagination from "@/components/Pagination";
-
+import BaiduMap from 'vue-baidu-map' //引入百度地图
 // 全局方法挂载
 Vue.prototype.getDicts = getDicts
 Vue.prototype.getConfigKey = getConfigKey
@@ -51,7 +51,10 @@ Vue.use(permission)
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium' // set element-ui default size
 })
-
+//使用百度地图组件
+Vue.use(BaiduMap, {
+  ak:"oftl4jQIPQZbKsaBWqoMxLSfh9bDBVYm"
+})
 Vue.config.productionTip = false
 
 new Vue({

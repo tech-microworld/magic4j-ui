@@ -15,7 +15,7 @@
 
 <script>
 import logoImg from '@/assets/logo/logo.png'
-import { getPlatformConfig } from "@/api/system/config";
+import { getPlatformConfig } from "@/api/sys/config";
 export default {
   name: 'SidebarLogo',
   props: {

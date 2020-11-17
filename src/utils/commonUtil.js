@@ -127,7 +127,6 @@ export function handleTree(data, id, parentId, children, rootId) {
 
 // 参数转换
 export function param2String(data){
-  console.log('data', data);
   if (typeof data === 'string') {
     return data;
   }
@@ -149,4 +148,17 @@ export function param2String(data){
 // 通用下载方法
 export function download(fileUrl,fileName) {
   window.location.href = baseURL + "/api/storage/download?fileName=" + encodeURI(fileName) + "&fileUrl=" + fileUrl;
+}
+
+// 文件上传前校验
+/**
+ *
+ * @param {*} file   使用before-upload钩子时传入的文件
+ * @param {*} arr    限制的扩展名
+ */
+export function beforeUpload(file,arr = []){
+  const typeList = [...arr];
+  const fileName = file.name;
+  const extension = fileName.substr(fileName.lastIndexOf(".") + 1);
+  return typeList.includes(extension);
 }

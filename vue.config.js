@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = defaultSettings.title || 'magic4j开发平台' // 标题
+const name = defaultSettings.title || '友友团接龙' // 标题
 
 const port = process.env.port || process.env.npm_config_port || 80 // 端口
 
@@ -34,6 +34,7 @@ module.exports = {
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
         target: `http://127.0.0.1:8888`,
+        //target: `http://111.230.203.152:8888`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''

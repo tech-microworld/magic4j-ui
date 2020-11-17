@@ -187,3 +187,17 @@
 	box-shadow: 0 0 4px #ccc;
 	overflow: hidden;
 }
+
+ .col-setting-popover {
+   min-width: 100px;
+   padding: 9px 16px;
+   .col-setting-title {
+     color: #7f8b93;
+     font-size: 12px;
+   }
+   .col-setting-group {
+     .el-checkbox {
+       display: block;
+     }
+   }
+ }

@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'magic4j开发平台',
+  title: 'magic4j快速开发平台',
 
   /**
    * 是否系统布局配置

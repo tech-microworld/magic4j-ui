@@ -99,7 +99,12 @@ service.interceptors.request.use(
         });
         return retryOriginalRequest
       }else {
-        if(request.url !== '/api/login/user' && request.url !== '/api/sys/resource/getRouters' && request.url !=='/api/sys/config/platform'){
+        if(request.url !== '/api/login/user'
+          && request.url !== '/api/sys/resource/getRouters'
+          && request.url !=='/api/sys/config/platform'
+          && request.url !=='/api/sys/cnArea/tree'
+          && request.url !=='/api/sys/cnArea/treeSelect'
+        ){
           showFullScreenLoading();
         }
         return request
